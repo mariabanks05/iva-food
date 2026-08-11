@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IvaiFood - Delivery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div>
+        <p class="eyebrow">IvaiFood</p>
+        <h1>Delivery local de comidas</h1>
+      </div>
+      <nav>
+        <a href="#promocoes">Promoções</a>
+        <a href="#categorias">Categorias</a>
+        <a href="#restaurantes">Restaurantes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <h2>Encontre os melhores restaurantes de Ivaí</h2>
+        <p>Delivery rápido e fácil com pratos quentes, sobremesas e bebidas.</p>
+      </div>
+      <div class="search-card">
+        <input id="searchInput" type="text" placeholder="Buscar restaurante ou prato" aria-label="Buscar restaurante ou prato" />
+      </div>
+    </section>
+
+    <section id="promocoes" class="section">
+      <div class="section-header">
+        <h3>Promoções</h3>
+        <p>Ofertas especiais para aproveitar agora.</p>
+      </div>
+      <div class="grid grid-3">
+        <article class="card promo-card">
+          <h4>Combo Família</h4>
+          <p>Pizza + refrigerante por R$59,90.</p>
+        </article>
+        <article class="card promo-card">
+          <h4>Bebida Grátis</h4>
+          <p>Peça 2 pratos e ganhe refrigerante.</p>
+        </article>
+        <article class="card promo-card">
+          <h4>Desconto 20%</h4>
+          <p>Em pedidos acima de R$80 em qualquer restaurante.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="categorias" class="section">
+      <div class="section-header">
+        <h3>Categorias</h3>
+      </div>
+      <div class="categories" role="group" aria-label="Categorias de restaurantes">
+        <button class="category-btn active" data-category="all">Todas</button>
+        <button class="category-btn" data-category="hamburguer">Hambúrguer</button>
+        <button class="category-btn" data-category="pizza">Pizza</button>
+        <button class="category-btn" data-category="japonesa">Japonesa</button>
+        <button class="category-btn" data-category="sobremesa">Sobremesa</button>
+      </div>
+    </section>
+
+    <section id="restaurantes" class="section">
+      <div class="section-header">
+        <h3>Restaurantes</h3>
+        <p>Tudo pronto para entregar onde você estiver.</p>
+      </div>
+      <div id="restaurantList" class="grid grid-2">
+        <article class="card restaurant-card" data-category="hamburguer">
+          <h4>Burger Express</h4>
+          <p>Hambúrgueres artesanais e batata frita crocante.</p>
+        </article>
+        <article class="card restaurant-card" data-category="pizza">
+          <h4>Pizzaria La Forno</h4>
+          <p>Pizza de massa fina e ingredientes frescos.</p>
+        </article>
+        <article class="card restaurant-card" data-category="japonesa">
+          <h4>Sushi Ivaí</h4>
+          <p>Sushi, sashimi e temaki para pedidos rápidos.</p>
+        </article>
+        <article class="card restaurant-card" data-category="sobremesa">
+          <h4>Doce Tentação</h4>
+          <p>Doces, bolos e sobremesas geladas.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 IvaiFood - versão estática em HTML, CSS e JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
